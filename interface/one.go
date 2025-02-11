@@ -23,7 +23,7 @@ package interface_go
 // 	return "Meow!"
 // }
 
-// func Run() {
+// func Run1() {
 // 	// Create instances of Dog and Cat
 // 	var dog Animal = Dog{}
 // 	var cat Animal = Cat{}
