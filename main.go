@@ -6,5 +6,5 @@ import (
 
 func main() {
 	interface_go.Run()
-	interface_go.Run6()
+	interface_go.Run8()
 }
