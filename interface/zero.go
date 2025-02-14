@@ -3,11 +3,10 @@ package interface_go
 import "fmt"
 
 func Run() {
-
 	var notype interface{}
-	notype = "type string"
+	notype = "xin chào, hello world"
 	fmt.Println(notype)
-	notype = 123
+	notype = 123.5 /// int
 
 	fmt.Println(notype)
 
