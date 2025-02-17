@@ -69,3 +69,19 @@ func Run() {
 	}
 	cart.Checkout()
 }
+
+// Explanation
+// Interface Definition:
+// The PaymentStrategy interface declares a Pay method. This allows us to define various payment methods that implement this interface.
+
+// Concrete Strategies:
+
+// CreditCardStrategy implements the payment method using credit card details.
+// PaypalStrategy implements the payment method using an email address.
+// Context (ShoppingCart):
+// The ShoppingCart struct maintains a list of items and a field of type PaymentStrategy. Its Checkout method calculates the total and delegates the payment operation to the chosen strategy.
+
+// Usage in Main:
+// In main(), we create a shopping cart, add items, and set a specific payment strategy before calling Checkout(). We demonstrate switching strategies by resetting the cart and using a different payment method.
+
+// This example demonstrates how the Strategy pattern allows the payment behavior to be changed dynamically at runtime, adhering to the Open/Closed Principle by keeping the shopping cart code independent of the payment algorithm implementations.
