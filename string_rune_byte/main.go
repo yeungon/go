@@ -4,7 +4,16 @@ import (
 	"fmt"
 	"os"
 	"reflect"
+	"unicode/utf8"
 )
+
+func Length() {
+	s := "Hello, xin chào 😄"
+	fmt.Println(len(s))                    // 21
+	fmt.Println(utf8.RuneCountInString(s)) // 17
+	runes := []rune(s)
+	fmt.Println(len(runes)) //17
+}
 
 func ReadTheFile() {
 	// Read entire file content into memory
@@ -29,6 +38,6 @@ func ReadTheFile() {
 }
 
 func main() {
-	fmt.Println("hello")
 	ReadTheFile()
+	Length()
 }
