@@ -1,4 +1,4 @@
-package main
+package lt_string
 
 import (
 	"fmt"
@@ -16,8 +16,13 @@ func Length() {
 }
 
 func ReadTheFile() {
-	// Read entire file content into memory
-	content, err := os.ReadFile("example.txt")
+	dir, err := os.Getwd()
+	if err != nil {
+		fmt.Println("Error:", err)
+		return
+	}
+
+	content, err := os.ReadFile(dir + "/string_rune_byte/example.txt")
 	if err != nil {
 		fmt.Println("Error reading file:", err)
 		return
@@ -37,7 +42,9 @@ func ReadTheFile() {
 	fmt.Println(string(content))
 }
 
-func main() {
+func Run() {
 	ReadTheFile()
 	Length()
+	Task()
+	Index()
 }

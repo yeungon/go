@@ -1,12 +1,12 @@
 package main
 
 import (
-	design_pattern "github.com/yeungon/go/designpattern"
-	interface_go "github.com/yeungon/go/interface"
+	lt_string "github.com/yeungon/go/string_rune_byte"
 )
 
 func main() {
-	interface_go.Run()
-	interface_go.Run8()
-	design_pattern.Run()
+	// interface_go.Run()
+	// interface_go.Run8()
+	// design_pattern.Run()
+	lt_string.Run()
 }
