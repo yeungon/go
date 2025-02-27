@@ -16,6 +16,7 @@ func Length() {
 }
 
 func ReadTheFile() {
+
 	dir, err := os.Getwd()
 	if err != nil {
 		fmt.Println("Error:", err)
